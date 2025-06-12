@@ -1,0 +1,120 @@
+*{
+ margin:0;
+ padding:0;
+ font-family: "Cascadia Code", sans-serif;
+}
+
+.main_box{
+  background-image:url("photo.jpg");
+  height:100vh;
+  background-size:cover;
+}
+
+.sidebar_menu{
+        background-color:rgba(0,0,0,0.4);
+        width:250px;
+        height:500px;
+         color:rgba(255,255,255,1);
+         position:fixed;
+         left:-250px;
+         box-shadow:5px 5px 14px rgba(0, 55, 128, 0.445);
+         transition: 0.3s linear;
+}
+
+.menu{
+  margin-top:65px;
+}
+#check{
+  display:none;
+}
+
+.sidebar_menu a{
+color:rgba(255,255,255,1);
+text-decoration:none;
+}
+
+.sidebar_menu .logos a{
+   font-size:20px;
+   font-weight:900;
+   color:grey;
+   position:absolute;
+   left:50px;
+   top:30px;
+   transition:0.2s linear;
+   animation:move 3s linear infinite ;
+}
+
+.btn_two label i{
+   position:absolute;
+   left:230px;
+   font-weight:700px;
+   color:#ff3c005b;
+}
+
+.sidebar_menu ul{
+  margin-top:45px;
+  line-height:50px;
+}
+
+.social_media a i{
+        padding-left:20px;          
+}
+
+.main_box .btn_one label i{
+   color:white;
+   font-weight:700;
+   position:absolute;
+   left:10px;
+   top:8px;
+   transition: linear ;
+}
+
+.main_box .btn_one > label > i:hover{
+             font-size:21px;
+             color:rgba(255, 0, 0, 0.603);
+}
+
+#check:checked ~ .sidebar_menu{
+    left:0;
+}
+
+#check:checked ~ .btn_one > label > i{
+  opacity:0;
+}
+
+li:hover{
+  border:3px solid rgba(0, 0, 0, 0.678);
+  font-size:17px;
+}
+
+.sidebar_menu .logos a:hover{
+  font-size:25px;
+  box-shadow:4px 4px 13px rgba(0, 55, 128, 0.445);
+  animation:none;
+}
+
+.btn_two > label > i:hover{
+  font-size:23px;
+}
+
+.social_media > ul > a > i:hover{
+       font-size:23px;     
+}
+
+@keyframes move{
+  0%{
+    transform:scaleY(0);
+  }
+  70%{
+    transform:scaleY(3);
+    color:rgba(255, 17, 0, 0.603);
+  }
+  100%{
+    transform:scaleY(0);
+  }
+}
+
+
+
+
+
